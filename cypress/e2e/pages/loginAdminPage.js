@@ -1,10 +1,10 @@
 export class LoginPage{
-    enterUsername() {
-        cy.get('[name="email"]').type('admin@itobuz.com')
+    enterUsername(user) {
+        cy.get('[name="email"]').type(user)
 
     }
-    enterPassword() {
-        cy.get('[type="password"]').type('Admin@1234')
+    enterPassword(pass) {
+        cy.get('[type="password"]').type(pass)
 
     }
     clickContinue() {
