@@ -1,13 +1,18 @@
 import { LoginPage } from "./pages/loginAdminPage.js"
 
-it('login', function() {
-   
-    const loginPage = new LoginPage(); // Create instance inside the test case
+it('login', () => {
+    const loginPage = new LoginPage();
 
-    cy.visit('https://spoon-admin.x-studio.io')
+    // Access environment variables directly
+    const BASE_URL = Cypress.env('BASE_URL');
+    const Email = Cypress.env('Email');
+    const Password = Cypress.env('Password');
 
-    loginPage.enterUsername()
-    loginPage.enterPassword()
-    loginPage.clickContinue()
+    cy.visit(BASE_URL);
+    loginPage.enterUsername(Email);
+    loginPage.enterPassword(Password);
+    loginPage.clickContinue();
+    cy.url().should('eq', 'https://spoon-admin.x-studio.io/dashboard');
 });
+
 
