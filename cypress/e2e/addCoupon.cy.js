@@ -13,5 +13,6 @@ describe('Login Tests', () => {
         loginPage.enterUsername(Email);
         loginPage.enterPassword(Password);
         loginPage.clickContinue();
+        cy.url().should('eq', 'https://spoon-admin.x-studio.io/dashboard');
     });
 });
