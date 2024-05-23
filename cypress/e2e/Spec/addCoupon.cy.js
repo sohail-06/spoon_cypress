@@ -1,4 +1,4 @@
-import { LoginPage } from "./pages/loginAdminPage.js";
+import { LoginPage } from "../pages/loginAdminPage.js";
 
 describe('Login Tests', () => {
     it('login', () => {

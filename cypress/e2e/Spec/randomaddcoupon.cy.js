@@ -1,4 +1,4 @@
-import { LoginPage } from "./pages/loginAdminPage.js";
+import { LoginPage } from "../pages/loginAdminPage.js";
 import {faker} from '@faker-js/faker';
 import { format } from 'date-fns';
 
@@ -6,10 +6,6 @@ describe('Create coupon', () => {
     
     it('add coupon', () => {
         const loginPage = new LoginPage();
-        // const alphanumericString = faker.random.alphaNumeric(10);
-        // console.log(alphanumericString);
-        
-        // Access environment variables directly
         const BASE_URL = Cypress.env('BASE_URL');
         const Email = Cypress.env('Email');
         const Password = Cypress.env('Password');
