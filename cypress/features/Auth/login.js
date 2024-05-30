@@ -7,5 +7,6 @@ export const LoginPageFeatures = {
     cy.get(LoginPage.password_textbox).type(Cypress.env('Password'));
     cy.get(LoginPage.loginButton).click();
     cy.contains('Welcome Admin')
+    cy.wait(4000)
   }
 };
