@@ -4,6 +4,7 @@ import { staffFeatures } from "../../features/Staff/staff_features";
 describe('Staff features', () => {
   it('add staff', () => {
     LoginPageFeatures.login();
-    staffFeatures.staff();
+    staffFeatures.staffadd();
+    staffFeatures.staffedit();
   });
 });

@@ -1,4 +1,5 @@
 import { faker } from '@faker-js/faker';
+import { staffPage } from './staff_page';
 export class Staff {
 
     addStaff() {
@@ -23,8 +24,8 @@ export class Staff {
         //cy.xpath('//span[normalize-space()="Manage Staff"]').click()
         cy.url().should('eq', 'https://spoon-admin.x-studio.io/user?page=1')
         cy.wait(4000)
-        cy.get('tbody .cursor-pointer').first().click()
-        cy.xpath('//td[6]//button[1]').click()
+        cy.get(staffPage.Staff_expose_menu).first().click()
+        cy.xpath(staffPage.Staff_edit_button).click()
         cy.xpath('//button[@type="submit"]').click()
         cy.contains("Staff details updated successfully.")
         cy.wait(2000)

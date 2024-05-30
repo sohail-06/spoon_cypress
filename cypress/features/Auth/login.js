@@ -6,6 +6,6 @@ export const LoginPageFeatures = {
     cy.get(LoginPage.userName_textbox).type(Cypress.env('Email'));
     cy.get(LoginPage.password_textbox).type(Cypress.env('Password'));
     cy.get(LoginPage.loginButton).click();
-    cy.contains('Welcome Spoon Admin')
+    cy.contains('Welcome Admin')
   }
 };
