@@ -8,5 +8,7 @@ export let couponPage = {
      startDate:'[placeholder="Start Date"]',
      endDate:'[placeholder="End Date"]',
      couponSubmitButton:'[type="submit"]',
-     couponEditButton:'[class="relative cursor-pointer"]'
+     couponExposeMenu:'.relative.cursor-pointer',
+     couponEditButton:'[class="hover:bg-slate-200 p-2 rounded w-full text-start"]',
+     couponDelete:'.popup-form button:nth-child(2)'
 }

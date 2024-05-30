@@ -4,6 +4,8 @@ describe('Create coupon', () => {
     it ('add coupon', () =>{
         LoginPageFeatures.login()
         couponFeatures.addCoupon()
+        couponFeatures.editCoupon()
+        couponFeatures.deleteCoupon()
 })
 
 })

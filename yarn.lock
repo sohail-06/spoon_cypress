@@ -298,6 +298,11 @@ cross-spawn@^7.0.0:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
+cypress-network-idle@^1.14.2:
+  version "1.14.2"
+  resolved "https://registry.npmjs.org/cypress-network-idle/-/cypress-network-idle-1.14.2.tgz"
+  integrity sha512-xAdR8dH58KFPv8eCDWjviScITrJOcUpuMXYfYTc175nk2/NvnJ+I6ylSn1CM7yZmoV/gLbFa36QLiH5NfNEaLQ==
+
 cypress-xpath@^2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/cypress-xpath/-/cypress-xpath-2.0.1.tgz"

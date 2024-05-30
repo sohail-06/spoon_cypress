@@ -15,5 +15,8 @@
     "cypress-xpath": "^2.0.1",
     "date-fns": "^3.6.0",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "cypress-network-idle": "^1.14.2"
   }
 }
