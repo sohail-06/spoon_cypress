@@ -6,5 +6,6 @@ describe('Staff features', () => {
     LoginPageFeatures.login();
     staffFeatures.staffadd();
     staffFeatures.staffedit();
+    staffFeatures.staffDelete()
   });
 });
